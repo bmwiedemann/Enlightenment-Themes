@@ -217,13 +217,13 @@ group { name: "e/init/splash";
       }
 
 #define WHITE  255 255 255 255
-#define RED    255  40  20 255
-#define GREEN   152 205 87 255
-#define BLUE    255  40  20 255
-#define ORANGE 255 128  32 255
-#define YELLOW 255 220  64 255
-#define PURPLE 255 128  32 255
-#define CYAN    40 220 255 255
+#define RED    160  100  255 255
+#define GREEN   100 160 255 255
+#define BLUE    160  255  100 255
+#define ORANGE 120 255 200 255
+#define YELLOW 140 255 220  255
+#define PURPLE  120 255 180 255
+#define CYAN    180 120 255 255
       
       LED("l0", "led0", 255,
           BLUE, WHITE,
