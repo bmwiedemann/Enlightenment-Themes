@@ -64,38 +64,4 @@
          }
       }
    }
-   programs {
-      program {
-         signal: "e,state,focused";
-         source: "e";
-         action: STATE_SET "active" 0.0;
-         target: "arrow_base";
-      }
-      program {
-         signal: "e,state,unfocused";
-         source: "e";
-         action: STATE_SET "default" 0.0;
-         target: "arrow_base";
-      }
-#define ORIENT_SATE(_ORIENT, _STATE) \
-      program { \
-         signal: "e,state,orientation,"_ORIENT; source: "e"; \
-         action: STATE_SET _STATE 0.0; \
-         target: "arrow"; \
-         target: "shadow"; \
-      }
-      ORIENT_SATE("top", "down")
-      ORIENT_SATE("top_left", "down")
-      ORIENT_SATE("top_right", "down")
-      ORIENT_SATE("bottom", "default")
-      ORIENT_SATE("bottom_left", "default")
-      ORIENT_SATE("bottom_right", "default")
-      ORIENT_SATE("left", "right")
-      ORIENT_SATE("left_top", "right")
-      ORIENT_SATE("left_bottom", "right")
-      ORIENT_SATE("right", "left")
-      ORIENT_SATE("right_top", "left")
-      ORIENT_SATE("right_bottom", "left")
-#undef ORIENT_SATE
-   }
-}
+
